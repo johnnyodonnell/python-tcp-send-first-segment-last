@@ -1,10 +1,10 @@
 import socket
 import time
 
-from send_first_segment_last.lib.disable_auto_rst import disable, cleanup
-from send_first_segment_last.lib.IP_Datagram import IP_Datagram
-from send_first_segment_last.lib.TCP_Segment import TCP_Segment
-from send_first_segment_last.lib.TCP_Flags import TCP_Flags
+from tcp_send_first_segment_last.lib.disable_auto_rst import disable, cleanup
+from tcp_send_first_segment_last.lib.IP_Datagram import IP_Datagram
+from tcp_send_first_segment_last.lib.TCP_Segment import TCP_Segment
+from tcp_send_first_segment_last.lib.TCP_Flags import TCP_Flags
 
 
 

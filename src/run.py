@@ -1,4 +1,4 @@
-from send_first_segment_last.send import send_first_segment_last
+from tcp_send_first_segment_last.send import send_first_segment_last
 
 
 if __name__ == "__main__":

@@ -2,8 +2,8 @@ import random
 import socket
 import struct
 
-from send_first_segment_last.lib.checksum import calculate_checksum
-from send_first_segment_last.lib.TCP_Segment import TCP_Segment
+from tcp_send_first_segment_last.lib.checksum import calculate_checksum
+from tcp_send_first_segment_last.lib.TCP_Segment import TCP_Segment
 
 
 class IP_Datagram():

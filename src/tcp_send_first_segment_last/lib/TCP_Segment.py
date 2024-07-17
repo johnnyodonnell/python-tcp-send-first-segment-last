@@ -1,8 +1,8 @@
 import socket
 import struct
 
-from send_first_segment_last.lib.checksum import calculate_checksum
-from send_first_segment_last.lib.TCP_Flags import TCP_Flags
+from tcp_send_first_segment_last.lib.checksum import calculate_checksum
+from tcp_send_first_segment_last.lib.TCP_Flags import TCP_Flags
 
 
 def print_byte_string(byte_str):
