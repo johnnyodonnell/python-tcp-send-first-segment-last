@@ -126,6 +126,8 @@ def send_first_segment_last(dst_addr, dst_port, payload):
 
     sock.sendall(first_segment.get_bytes(src_addr, dst_addr))
 
+    time.sleep(5) # Wait a few seconds before closing connection
+
     # Receive Fin-Ack
     res_dgram = get_response(sock, src_port)
     res_segment = res_dgram.get_tcp_segment()
