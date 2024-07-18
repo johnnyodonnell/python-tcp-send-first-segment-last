@@ -7,6 +7,6 @@ if __name__ == "__main__":
     payload += b"\n"
     # payload = b"Hello TCP.\n"
 
-    # send_first_segment_last("192.168.219.10", 1234, payload)
-    send_first_segment_last("127.0.0.1", 4444, payload)
+    send_first_segment_last("192.168.156.10", 1234, payload)
+    # send_first_segment_last("127.0.0.1", 4444, payload)
 
