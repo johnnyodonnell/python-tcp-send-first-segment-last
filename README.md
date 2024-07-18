@@ -38,7 +38,7 @@ $ pip install tcp-send-first-segment-last
 from tcp_send_first_segment_last.send import send_first_segment_last
 
 
-buffer = b"A" * 5000
+payload = b"A" * 5000
 
 send_first_segment_last("127.0.0.1", 4444, payload)
 ```
