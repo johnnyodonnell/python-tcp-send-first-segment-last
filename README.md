@@ -11,7 +11,7 @@ if the receiving application doesn't properly loop, then it may miss
 key data later in the buffer.
 
 This library ensures that all data will be in the receiving buffer
-before the receiving application begins receiving the data. It does
+before the receiving application begins reading the data. It does
 this by sending the TCP segments out of order; and in particular,
 it does this by sending the first TCP segment last.
 
@@ -24,7 +24,7 @@ all of the intended data.
 I first encountered this issue while working on the EXP-301 course
 from OffSec (a course that focuses on exploiting applications
 via buffer overflows). And I created this library to help solve
-labs and challenges in this course.
+labs and challenges from this course.
 
 ## Usage
 
