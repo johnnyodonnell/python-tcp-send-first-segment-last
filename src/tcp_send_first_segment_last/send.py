@@ -95,7 +95,7 @@ def send_first_segment_last(dst_addr, dst_port, payload):
     cleanup()
 
     # Needed for preventing OS from resetting TCP connection
-    disable(src_port)
+    post_submit_cleanup = disable(src_port)
 
     (seq_num, ack_num) = establish_connection(
             sock, src_addr, dst_addr, src_port, dst_port)
@@ -142,7 +142,7 @@ def send_first_segment_last(dst_addr, dst_port, payload):
             seq_num, ack_num, fin_ack_received)
 
     sock.close()
-    cleanup()
+    post_submit_cleanup()
 
     return
 
